@@ -18,18 +18,13 @@ module.exports = {
     plugins: [
         new CleanWebpackPlugin(),
         new CopyPlugin([{
-                from: 'index.html',
-                to: path.resolve(__dirname, 'docs')
-            },
-            {
-                from: path.resolve(__dirname, 'static'),
-                to: path.resolve(__dirname, 'docs')
-            }
-        ])
+            from: path.resolve(__dirname, 'static'),
+            to: path.resolve(__dirname, '')
+        }])
     ],
     output: {
         filename: 'bundle.js',
-        path: path.resolve(__dirname, 'docs'),
+        path: path.resolve(__dirname, 'dist'),
     },
 };
 
