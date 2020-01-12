@@ -9,7 +9,7 @@ import {
 
 (function () {
     var cal = new VCALENDAR();
-    $.getJSON('http://egw.ifsc-climbing.org/egw/ranking/json.php', data => {
+    $.getJSON('https://egw.ifsc-climbing.org/egw/ranking/json.php', data => {
         cal.addProp('VERSION', 2)
         cal.addProp('PRODID', 'IFSC');
         data.competitions.forEach(comp => {
