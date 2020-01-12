@@ -1,8 +1,8 @@
 {
   "name": "ifsc-cal",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Generate a iCal-file of the IFSC calendar",
-  "main": "./index/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "webpack --config webpack.prod.js",

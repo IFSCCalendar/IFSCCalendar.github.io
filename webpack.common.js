@@ -20,10 +20,14 @@ module.exports = {
         new CopyPlugin([{
             from: path.resolve(__dirname, 'static'),
             to: path.resolve(__dirname, '')
-        }])
+        }],
+        ),
+        new webpack.DefinePlugin({
+            VERSION: JSON.stringify(require("./package.json").version)
+        })
     ],
     output: {
-        filename: 'bundle.js',
+        filename: 'dist/bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
 };
