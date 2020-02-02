@@ -3,7 +3,6 @@ const {
     CleanWebpackPlugin
 } = require('clean-webpack-plugin');
 const webpack = require('webpack');
-const CopyPlugin = require('copy-webpack-plugin');
 
 module.exports = {
     entry: {
@@ -17,11 +16,6 @@ module.exports = {
     },
     plugins: [
         new CleanWebpackPlugin(),
-        new CopyPlugin([{
-            from: path.resolve(__dirname, 'static'),
-            to: path.resolve(__dirname, '')
-        }],
-        ),
         new webpack.DefinePlugin({
             VERSION: JSON.stringify(require("./package.json").version)
         })
