@@ -39,7 +39,5 @@ $.getJSON('https://ifsc-egw.wavecdn.net/egw/ranking/json.php', data => {
         cal.addComponent(event);
     });
     var url = window.URL.createObjectURL(cal.toBlob());
-    $('#btn_download').removeClass('disabled');
-    $('#btn_download').attr('href', url);
-    $('#btn_download').attr('download', 'ifsc.ics');
+    $('#btn_download').removeClass('disabled').attr('href', url).attr('download', 'ifsc.ics');
 });
