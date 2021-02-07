@@ -11,7 +11,7 @@
   "author": "Bastian Block <blockbasti99@gmail.com>",
   "license": "ISC",
   "dependencies": {
-    "bootstrap": "^4.6.0",
+    "bootstrap": "^4.5.3",
     "ics-js": "^0.10.2",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.0"
