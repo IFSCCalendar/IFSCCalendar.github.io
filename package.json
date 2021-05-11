@@ -13,7 +13,7 @@
   "dependencies": {
     "bootstrap": "^4.6.0",
     "ics-js": "^0.10.2",
-    "jquery": "^3.5.1",
+    "jquery": "^3.6.0",
     "popper.js": "^1.16.0"
   },
   "devDependencies": {
